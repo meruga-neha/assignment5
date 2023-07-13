@@ -66,10 +66,6 @@ class savingsaccount(Account):
     def __init__(self,title,balance,interest_rate):
         super().__init__(title,balance)
         self.interest_rate = interest_rate
-
-account_1 = Account("ashish",5000)
-print(account_1.title)
-print(account_1.balance)
 account_2 = savingsaccount("ashish",5000,5)
 print(account_2.title)
 print(account_2.balance)
