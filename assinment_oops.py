@@ -28,6 +28,8 @@ class calculator:
        return self.num1 * self.num2
     def divide(self):
         return self.num1 % self.num2
+num1 = int(input())
+num2 = int(input())
 object_1 = calculator(10,94)
 print('addition of num1 and num2:',object_1.add())
 print('subtraction of num1 and num2:',object_1.subtract())
