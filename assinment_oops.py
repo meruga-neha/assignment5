@@ -37,26 +37,27 @@ print('division of num1 and num2',object_1.divide())
 
 # CHALLANGE - 3  IMPLEMENT THE COMPLETE STUDENT CLASS
 
-class calculator:
-    def __init__(self,num1,num2):
-        self.num1 = num1
-        self.num2 = num2
-    def add(self):
-        return self.num1 + self.num2
-    def subtract(self):
-        return self.num2 - self.num1
-    def multiply(self):
-       return self.num1 * self.num2
-    def divide(self):
-        return self.num1 % self.num2
-num1 = int(input())
-num2 = int(input())
-object_1 = calculator(num1,num2)
-print('addition of num1 and num2:',object_1.add())
-print('subtraction of num1 and num2:',object_1.subtract())
-print('multipication of num1 and num2:',object_1.multiply())
-print('division of num1 and num2',object_1.divide())
-
+class Student:
+    def _init_(self):
+        self.__name = None
+        self.__rollNumber = None
+    def setName(self, name):
+        self.__name = name
+    def getName(self):
+        return self.__name
+    def setRollNumber(self, rollNumber):
+        self.__rollNumber = rollNumber
+    def getRollNumber(self):
+        return self.__rollNumber
+name = input()
+rollnumber = int(input())
+student = Student()
+student.setName(name)
+student.setRollNumber(rollnumber)
+name = student.getName()
+rollNumber = student.getRollNumber()
+print("Name:", name)
+print("Roll Number:", rollNumber)
 
 #CHALLANGE - 4  IMPLEMENT A BANKING ACCOUNT
 
