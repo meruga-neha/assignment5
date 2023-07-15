@@ -7,9 +7,9 @@ class point:
         self.z = z
     def sqsum(self):
         print('sum of squared numbers:',self.x**2 + self.y**2 + self.z**2)
-x = int(input())
-y = int(input())
-z = int(input())
+x = int(input("enter x value:"))
+y = int(input("enter y value:"))
+z = int(input("enter z value:"))
 object1 = point(x,y,z)
 print(object1.sqsum())
 
@@ -28,8 +28,9 @@ class calculator:
        return self.num1 * self.num2
     def divide(self):
         return self.num1 % self.num2
-num1 = int(input())
-num2 = int(input())
+    
+num1 = int(input("enter num1:"))
+num2 = int(input("enter num2:"))
 object_1 = calculator(num1,num2)
 print('addition of num1 and num2:',object_1.add())
 print('subtraction of num1 and num2:',object_1.subtract())
@@ -51,8 +52,8 @@ class Student:
         self.__rollNumber = rollNumber
     def getRollNumber(self):
         return self.__rollNumber
-name = input()
-rollnumber = int(input())
+name = input("enter the name:")
+rollnumber = int(input("enter the rollnumber:"))
 student = Student()
 student.setName(name)
 student.setRollNumber(rollnumber)
@@ -71,9 +72,9 @@ class savingsaccount(Account):
     def __init__(self,title,balance,interest_rate):
         super().__init__(title,balance)
         self.interest_rate = interest_rate
-title = input()
-balance = int(input())
-interest_rate = int(input())
+title = input("enter the title:")
+balance = int(input("enter the balance:"))
+interest_rate = int(input("enter the interest rate:"))
 account_2 = savingsaccount(title,balance,interest_rate)
 print("account title:",account_2.title)
 print("account balance:",account_2.balance)
@@ -100,11 +101,11 @@ class savingsaccount(account):
         self.interestrate = interestrate
     def interestAmount(self):
         return self.balance * (self.interestrate/100)
-balance = int(input())
-deposit = int(input())
-balance_2 = int(input())
-withdrawal = int(input())
-interest_rate = int(input())
+balance = int(input("enter balance amount:"))
+deposit = int(input("enter deposit of amount:"))
+balance_2 = int(input("enter the balance amount:"))
+withdrawal = int(input("enter withdrawal:"))
+interest_rate = int(input("enter the interest:"))
 account_1 = account(balance)
 account_1.deposit(deposit)
 print('deposit of amount:',account_1.getbalance())
