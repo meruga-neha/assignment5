@@ -30,7 +30,7 @@ class calculator:
         return self.num1 % self.num2
 num1 = int(input())
 num2 = int(input())
-object_1 = calculator(10,94)
+object_1 = calculator(num1,num2)
 print('addition of num1 and num2:',object_1.add())
 print('subtraction of num1 and num2:',object_1.subtract())
 print('multipication of num1 and num2:',object_1.multiply())
